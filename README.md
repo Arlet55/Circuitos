@@ -1,7 +1,9 @@
 //Circuitos- Calculo de las resistencias 
+
 #include <stdio.h>
 
 int main (){
+
     float V, R, l1, l2, l3, l4; //valor de la fuente en volts y los leds
 
     printf ("Escribe el valor de la fuente V: ");
