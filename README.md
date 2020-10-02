@@ -26,6 +26,7 @@
 //Elaboro: Arlet Sanchez Rivera 
     //24 de Septiembre 2020
     //0.2 Calculo de la corrientes y resistencias 
+    
     #include <stdio.h>
 
     int main (){
@@ -62,6 +63,7 @@
 //Elaboro: Arlet Sanchez Rivera
     //1 de Octubre 2020
     //0.3 Calificaciones 
+    
     #include <stdio.h>
 
     main()
@@ -157,7 +159,8 @@
     
 //Elaboro: Arlet Sanchez Rivera 
     //1 de Octubre 2020
-    //0.5 Ecuacion cuadratica 
+    //0.4 Ecuacion cuadratica 
+    
     #include <stdio.h>
     #include <math.h>
 
