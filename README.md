@@ -63,7 +63,6 @@
 //Elaboro: Arlet Sanchez Rivera
     //1 de Octubre 2020
     //0.3 Calificaciones 
-    
     #include <stdio.h>
 
     main()
@@ -72,27 +71,32 @@
     float prom, calif1, calif2, calif3;
     printf("Escriba sus tres calificaciones, recordando que se deben escribir en letra mayuscula usando A, B, C, D o E\n");
     printf("Escriba su primer calificacion:\n");
+    scanf("%c", &C1);
     printf("Escriba su segunda calificacion:\n");
+    fflush( stdin );
+    scanf("%c", &C2);
     printf("Escriba su tercer calificacion:\n");
-    scanf("%c %c %c", &C1, &C2, &C3);
+    fflush( stdin );
+    scanf("%c", &C3);
 
-    if (C1=='A')
+    if (C1=='A'||C1=='a')
     {
         calif1=10;
+
     }
-    else if (C1=='B')
+    else if (C1=='B'||C1=='b')
     {
         calif1=9;
     }
-    else if (C1=='C')
+    else if (C1=='C'||C1=='c')
     {
         calif1=8;
     }
-    else if (C1=='D')
+    else if (C1=='D'||C1=='d')
     {
         calif1=7;
     }
-    else if (C1=='E')
+    else if (C1=='E'||C1=='e')
     {
         calif1=6;
     }
@@ -101,23 +105,24 @@
         printf ("Su primer calificacion es menor de 6\n");
     }
 
-    if (C2=='A')
+    if (C2=='A'||C2=='a')
     {
         calif2=10;
+
     }
-    else if (C2=='B')
+    else if (C2=='B'||C2=='b')
     {
         calif2=9;
     }
-    else if (C2=='C')
+    else if (C2=='C'||C2=='c')
     {
         calif2=8;
     }
-    else if (C2=='D')
+    else if (C2=='D'||C2=='d')
     {
         calif2=7;
     }
-    else if (C2=='E')
+    else if (C2=='E'||C2=='e')
     {
         calif2=6;
     }
@@ -126,23 +131,24 @@
         printf ("Su segunda calificacion es menor de 6\n");
     }
 
-       if (C3=='A')
+       if (C3=='A'||C3=='a')
     {
         calif3=10;
+
     }
-    else if (C3=='B')
+    else if (C3=='B'||C3=='b')
     {
         calif3=9;
     }
-    else if (C3=='C')
+    else if (C3=='C'||C3=='c')
     {
         calif3=8;
     }
-    else if (C2=='D')
+    else if (C2=='D'||C3=='d')
     {
         calif3=7;
     }
-    else if (C3=='E')
+    else if (C3=='E'||C3=='e')
     {
         calif3=6;
     }
@@ -152,10 +158,12 @@
     }
 
     prom=(calif1+calif2+calif3)/3;
-    printf ("Su promedio es de:%f\n", prom);
 
-    }
+
+    printf ("Su promedio es de:%f\n", prom);
     
+    }
+
     
 //Elaboro: Arlet Sanchez Rivera 
     //1 de Octubre 2020
