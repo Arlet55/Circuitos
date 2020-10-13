@@ -20,8 +20,8 @@
     printf("El valor de la resistencia para el led verde std es %0.03f Ohms\n", l2);
     printf("El valor de la resistencia para el led azul brillante es %0.03f Ohms\n", l3);
     printf("El valor de la resistencia para el led blanco es %0.03f Ohms\n", l4);
-
     }
+    
     
 //Elaboro: Arlet Sanchez Rivera 
     //24 de Septiembre 2020
@@ -205,6 +205,53 @@
         printf("La ecuacion no tiene solucion");
     }
 
+    return 0;
+    }
+
+
+//Elaboro: Arlet Sanchez Rivera 
+    //13 de Octubre 2020
+    //0.5 Primer tabla 
+    
+    #include <stdio.h>
+
+    int main()
+    {
+    int cont=0;
+    int N;
+
+    printf("Escribe el valor de N: ");
+    scanf("%d",&N);
+
+    while (cont<=N){
+
+    printf("%d \n",(N*N)-2*cont);
+    cont++;
+    }
+    return 0;
+    }
+    
+    
+//Elaboro: Arlet Sanchez Rivera 
+    //13 de Octubre 2020
+    //0.6 Segunda tabla  
+    
+    #include <stdio.h>
+
+    int main()
+    {
+    int cont=0;
+    int A, N;
+
+    printf("Escribe el valor de N ");
+    scanf("%d", &N);
+
+    while(cont<=(N+(N+1))){
+
+    A=cont;
+    printf("%d \n",(3*N)+2*A);
+    cont=cont+1;
+    }
     return 0;
     }
 
