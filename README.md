@@ -255,3 +255,155 @@
     return 0;
     }
 
+//Elaboro: Arlet Sanchez Rivera
+    //2 de Noviembre 2020
+    //0.7 Menu
+        
+    #include <stdio.h>
+
+    int main()
+    {
+    int opc=1;
+
+    while (opc!=3)
+    {
+
+    printf("**********MENU***********\n");
+    printf("\n1.Figuras con asteristicos \n2.Valor de pi \n3.Series\n ");
+    printf ("\n ¿Que programa quieres realizar? Elige una opcion\n");
+    scanf("%i",&opc);
+    system("cls");
+
+    if(opc==1)
+    {
+    int na=1; //Numero de asteriscos
+    int ne=9; //Numero de espacios
+    int ia=1; //Incremento de asteriscos
+    int ie=1; //Incremento de espacios
+
+    printf ("A)\n");
+    for (int r=1;r<=10;r++)//Renglones
+    {
+        for (int a=1;a<=r;a++)//Asteriscos
+        {
+            printf ("*");
+        }
+        printf ("\n");
+    }
+    printf ("B)\n");
+    for (int r=1;r<=10;r++)//Renglones
+    {
+        for (int a=r;a<=10;a++)//Asteriscos
+        {
+            printf ("*");
+        }
+        printf ("\n");
+    }
+     printf ("C)\n");
+    for (int r=1;r<=10;r++)//Renglones
+    {
+        for (int e=2;e<=r;e++)//Espacios
+        {
+            printf (" ");
+        }
+        for (int a=10;a>=r;a--)//Asteriscos
+        {
+            printf ("*");
+        }
+        printf ("\n");
+    }
+        printf ("D)\n");
+    for (int r=1;r<=10;r++)//Renglones
+    {
+        for (int e=9;e>=r;e--) //Espacios
+        {
+            printf(" ");
+        }
+        for (int a=1;a<=r;a++)
+        {
+            printf("*");
+        }
+        printf ("\n");
+    }
+        ne=ne+ie;
+        na=na+ia;
+
+    return 0;
+    }
+    
+     else if(opc==2)
+      {
+     int i,n,a = 1;
+        float pi = 0, pii;
+        printf("Escribe el numero de valores: ");
+        scanf("%d",&n);
+        for (i=0;i<n;i++)
+        {
+          pii=4/(float)a;
+               if (i % 2 == 1)
+               {
+                  pi-=pii;
+               }
+               else
+               {
+                   pi+=pii;
+               }
+          a += 2;
+        }
+    printf("El valor de Pi es: %.3f", pi);
+    return 0;
+     }
+     
+     else if (opc==3)
+       {
+        int N, P, S, T, C;
+        printf ("Escribe el numero de digitos que deseas ver\n");
+        scanf ("%d",&N);
+        P=0;
+        S=0;
+        T=0;
+        C=0;
+    printf ("\na):");
+    while (P<=N)
+    {
+        int n=-1;
+        for (P=1;P<=N;P++)
+        {
+            n=n+2;
+            printf ("%d, ",n);
+        }
+    }
+    printf ("\nb):");
+    while (S<=N)
+    {
+        int n=-1;
+        for (S=1;S<=N;S++)
+        {
+            n=n+3;
+            printf ("%d, ",n);
+        }
+    }
+    printf ("\nc):");
+    while (T<=N)
+    {
+        int n=40;
+        for (T=1;T<=N;T++)
+        {
+            n=n-10;
+            printf ("%d, ",n);
+        }
+    }
+    printf ("\nd):");
+    while (C<=N)
+    {
+        int n=7;
+        for (C=1;C<=N;C++)
+        {
+            n=n+8;
+            printf ("%d, ",n);
+        }
+    }
+    return 0;
+    }
+    }
+    }
